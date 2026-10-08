@@ -1,7 +1,7 @@
 #!/bin/bash
 
-python3 src/setup.py
-python3 src/trainer.py
-python3 src/calculate.py
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt --break-system-packages
 
 echo "Готово"
